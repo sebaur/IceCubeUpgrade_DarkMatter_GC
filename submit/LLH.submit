@@ -1,0 +1,15 @@
+executable = /data/user/sbaur/projects/PrepareForGit/Upgrade_DarkMatter/python/Sensitivity.py
+
+logdir = /scratch/sbaur/log/
+output = $(logdir)$(JOBNAME).$(Cluster).out
+error = $(logdir)$(JOBNAME).$(Cluster).err
+log = $(logdir)$(JOBNAME).$(Cluster).log
+
+notification   = never 
+universe       = vanilla
+
+should_transfer_files = YES
+request_memory = 5000
+
+arguments = -c $(CHANNEL) -p $(PROFILE) -m $(MASS) -o $(OVERSAMPLING) -b $(BINNING) -x $(REBINX) -y $(REBINY) -n $(CONF)
+queue

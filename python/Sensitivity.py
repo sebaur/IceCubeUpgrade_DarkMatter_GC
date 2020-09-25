@@ -46,7 +46,7 @@ rebin_y = int(options.REBINY)
 LLH_type = options.LLH
 
 
-source = 'source /data/user/sbaur/projects/PrepareForGit/Upgrade_DarkMatter/env.sh'
+source = 'source /data/user/sbaur/projects/finalized/Upgrade_DarkMatter/env.sh'
 dump = '/usr/bin/python -c "import os,pickle;print pickle.dumps(os.environ)"'
 penv = os.popen('%s && %s' %(source,dump))
 env = pickle.loads(penv.read())

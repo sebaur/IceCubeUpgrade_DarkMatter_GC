@@ -1,1 +1,8 @@
-*.pyc 
+# compiled source #
+*.pyc
+
+# binaray images #
+*.png
+*.pdf
+
+
